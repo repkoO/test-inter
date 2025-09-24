@@ -7,7 +7,6 @@ function About() {
   const t = useTranslations("About");
   return (
     <div className={styles.container}>
-      <LanguageSwitcher />
       <p className={styles.text}>{t("text")}</p>
       <div className={styles.link}>
         <Link href={"/"}>{t("link")}</Link>
