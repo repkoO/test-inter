@@ -2,7 +2,7 @@ import Image from "next/image";
 import styles from "./page.module.css";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
 import { useTranslations } from "next-intl";
-import Link from "next/link";
+import { Link } from "@/i18n/navigation";
 
 export default function Home() {
   const t = useTranslations("Homepage");

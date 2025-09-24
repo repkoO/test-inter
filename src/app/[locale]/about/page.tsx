@@ -1,7 +1,6 @@
 import { useTranslations } from "next-intl";
 import styles from "./page.module.css";
-import Link from "next/link";
-import LanguageSwitcher from "@/components/LanguageSwitcher";
+import { Link } from "@/i18n/navigation";
 
 function About() {
   const t = useTranslations("About");
