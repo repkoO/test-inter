@@ -1,7 +1,13 @@
+import { LocalePrefix } from './../node_modules/next-intl/dist/types/routing/types.d';
 import createMiddleware from "next-intl/middleware";
 import { routing } from "./i18n/routing";
 
-export default createMiddleware(routing);
+export default createMiddleware({
+  locales: routing.locales,
+  defaultLocale: routing.defaultLocale,
+  localePrefix: 'always',
+  localeDetection: true,
+});
 
 export const config = {
   // Match all pathnames except for
